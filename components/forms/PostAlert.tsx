@@ -28,7 +28,7 @@ interface Props {
 
 
 
-function PostThread({ userId }: { userId: string }) {
+function PostAlert({ userId }: { userId: string }) {
 
     const router = useRouter();
     const pathname = usePathname();
@@ -62,7 +62,7 @@ function PostThread({ userId }: { userId: string }) {
             render={({ field }) => (
               <FormItem className="flex flex-col w-full gap-3">
                 <FormLabel className="text-base-semibold text-light-2">
-                  Content
+                   New Scam Alert
                 </FormLabel>
                 <FormControl className="no-focus border border-dark-4
                 bg-dark-3 text-light-1" >
@@ -76,12 +76,12 @@ function PostThread({ userId }: { userId: string }) {
             )}
           />  
           <Button type="submit"
-          className="bg-primary-500">
-            Post Thread 
+          className="bg-red-500">
+            Post Alert
           </Button>
             </form>
             </Form>
     )
 }
 
-export default PostThread;
+export default PostAlert;

@@ -29,6 +29,11 @@ export const sidebarLinks = [
       route: "/profile",
       label: "Profile",
     },
+    {
+      imgURL: "/assets/alert.svg",
+      route: "/Create-alert",
+      label: "Create Alert",
+    },
   ];
   
   export const profileTabs = [
@@ -42,3 +47,5 @@ export const sidebarLinks = [
     { value: "members", label: "Members", icon: "/assets/members.svg" },
     { value: "requests", label: "Requests", icon: "/assets/request.svg" },
   ];
+
+  

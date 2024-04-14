@@ -27,9 +27,22 @@ async function Page() {
 
   return (
     <section>
+      <div>
       <h1 className="head-text mb-10">Search</h1>
       {/* search bar*/ }
-
+      <input
+          type="text"
+          placeholder="Search users"
+          name="search"
+          className="mx-6 w-10/12 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+        />
+        <button
+        typeof='submit'
+        className="bg-white w-mid px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+        >
+Search
+        </button>
+      </div>
       <div className="mt-14 flex flex-col gap-9">
         {result.users.length === 0?(
             <p className="no-result">No users</p>
@@ -48,7 +61,6 @@ async function Page() {
             
             </>
         )} 
-
       </div>
     </section>
   )
